@@ -19,11 +19,15 @@ class ReusableButton extends StatelessWidget {
           onPressed: onPress,
           minWidth: 200.0,
           height: 42.0,
-          child: Text(
-            text,
-            style: TextStyle(
-              color: Colors.white,
-            ),
+          child: Column(
+            children: <Widget>[
+              Text(
+                text,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ],
           ),
         ),
       ),
